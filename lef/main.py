@@ -26,6 +26,7 @@ class Extension:
         sys.exit(0)
 
     def register(self, events, handler):
+        print('called')
         response = post(
             url=f"https://{self.runtime_api_endpoint}/2020-01-01/extension/register",
             data={"events": [str(event) for event in events]},
@@ -39,12 +40,13 @@ class Extension:
 
     def process_events(self, extension_id, handler):
         while True:
+            print('called')
             response = get(
                 url=f"https://{self.runtime_api_endpoint}/2020-01-01/extension/event/next",
                 headers={"Lambda-Extension-Identifier": extension_id},
             ).json()
 
-            if response["eventType"] == EventType.SHUTDOWN:
+            if response["eventType"] == 'SHUTDOWN':
                 sys.exit(0)
             else:
                 handler(response)

@@ -5,6 +5,7 @@ from tests.utils import FakeResponse
 
 
 class UtilsTest(TestCase):
+
     @patch("lef.utils.request")
     def test_get(self, mock_request):
         mock_request.Request.return_value = "FakeRequestObject"
