@@ -21,3 +21,17 @@ def handler(event):
 extension = lef.Extension()
 extension.register([lef.EventType.INVOKE], handler)
 ```
+
+## Development
+
+Install Dependencies
+
+```bash
+$ poetry install --dev
+```
+
+Bump Version
+
+```bash
+$ poetry run bumpversion <VERSION LEVEL>
+```
