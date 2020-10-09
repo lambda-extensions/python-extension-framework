@@ -1,5 +1,6 @@
 import json
 
+
 class FakeResponse:
     def __init__(self, response, headers=None):
         self._response = response
@@ -11,4 +12,3 @@ class FakeResponse:
 
     def json(self):
         return json.loads(self._response)
-
