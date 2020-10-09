@@ -17,7 +17,7 @@ keywords = [
 ]
 
 packages = [
-    { include = "lambda_extension_framework" }
+    { include = "lef" }
 ]
 
 [tool.poetry.dependencies]
