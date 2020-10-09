@@ -1,9 +1,20 @@
 [tool.poetry]
-name = "python-extension-framework"
+name = "lambda-extension-framework"
 version = "0.1.0"
-description = ""
+description = "Framework for creating AWS Lambda Extensions"
 authors = ["Joe Snell <joepsnell@gmail.com>"]
 license = "MIT"
+readme = "README.md"
+repository = "https://github.com/lambda-extensions/python-extension-framework"
+documentation = "https://github.com/lambda-extensions/python-extension-framework"
+homepage = "https://github.com/lambda-extensions/python-extension-framework"
+keywords = [
+    "AWS",
+    "AWS Lambda",
+    "Lambda Extensions",
+    "Framework",
+    "Extension Framework"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
