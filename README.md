@@ -32,6 +32,8 @@ $ poetry install --dev
 
 Bump Version
 
+You can use the `bin/bump` script to bump the version. This is a wrapper for [bumpversion](https://pypi.org/project/bumpversion/).
+
 ```bash
-$ poetry run bumpversion <VERSION LEVEL>
+$ bin/bump <VERSION LEVEL>
 ```
