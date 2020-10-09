@@ -13,7 +13,7 @@ keywords = [
     "AWS Lambda",
     "Lambda Extensions",
     "Framework",
-    "Extension Framework"
+    "Lambda Extension Framework"
 ]
 
 packages = [

@@ -13,11 +13,11 @@ To get started you can use the default `Extension` class, or extend it.
 Example:
 
 ```python
-from lef import Extension
+import lef
 
 def handler(event):
     print(event)
 
-extension = Extension()
-extension.register([EventType.INVOKE], handler)
+extension = lef.Extension()
+extension.register([lef.EventType.INVOKE], handler)
 ```
