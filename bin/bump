@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+poetry run bumpversion --config-file pyproject.tml "$@"
