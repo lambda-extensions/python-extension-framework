@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "lambda-extension-framework"
+name = "lef"
 version = "0.1.0"
 description = "Framework for creating AWS Lambda Extensions"
 authors = ["Joe Snell <joepsnell@gmail.com>"]
@@ -14,6 +14,10 @@ keywords = [
     "Lambda Extensions",
     "Framework",
     "Extension Framework"
+]
+
+packages = [
+    { include = "lambda_extension_framework" }
 ]
 
 [tool.poetry.dependencies]
