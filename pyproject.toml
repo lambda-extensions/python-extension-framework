@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lef"
-version = "0.1.1"
+version = "0.1.2"
 description = "Framework for creating AWS Lambda Extensions"
 authors = ["Joe Snell <joepsnell@gmail.com>"]
 license = "MIT"
